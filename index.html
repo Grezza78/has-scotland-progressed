@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071d49">
+  <meta name="description" content="Has Scotland progressed to the Round of 32? A needlessly dramatic live-ish tracker.">
+  <title>Has Scotland Progressed to the Round of 32?</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero" aria-labelledby="answer">
+      <p class="eyebrow">Scotland at the 2026 World Cup</p>
+
+      <div class="hands" aria-hidden="true">
+        <span style="--i:0">🙌</span>
+        <span style="--i:1">🙌</span>
+        <span style="--i:2">🙌</span>
+        <span style="--i:3">🙌</span>
+        <span style="--i:4">🙌</span>
+        <span style="--i:5">🙌</span>
+        <span style="--i:6">🙌</span>
+        <span style="--i:7">🙌</span>
+        <span style="--i:8">🙌</span>
+      </div>
+
+      <div class="build-up" id="build-up" aria-hidden="true">WOOOOOOOOOOAH…</div>
+      <h1 id="answer">Checking the permutations…</h1>
+      <p class="subanswer" id="subanswer"></p>
+
+      <button id="replay" class="replay" type="button">Do the build-up again</button>
+    </section>
+
+    <section class="panel">
+      <div class="summary-grid">
+        <article>
+          <span class="label">Scotland</span>
+          <strong>3 pts</strong>
+          <small>GD −3 · GF 1</small>
+        </article>
+        <article>
+          <span class="label">Qualification route</span>
+          <strong>Best third-place</strong>
+          <small>Top 8 of 12 progress</small>
+        </article>
+        <article>
+          <span class="label">Current verdict</span>
+          <strong id="compact-status">Waiting</strong>
+          <small id="updated-at">Update pending</small>
+        </article>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-copy">
+          <h2>Helpful groups</h2>
+          <strong><span id="helpful-count">0</span> / <span id="helpful-needed">4</span></strong>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Helpful group outcomes" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0">
+          <div id="progress-bar"></div>
+        </div>
+        <p id="progress-note">Scotland need at least four other third-placed sides to finish below them.</p>
+      </div>
+
+      <h2>What needs to happen?</h2>
+      <div id="scenarios" class="scenarios"></div>
+
+      <details>
+        <summary>How the ranking works</summary>
+        <p>Third-placed teams are separated by points, then goal difference, goals scored, team conduct and FIFA ranking.</p>
+      </details>
+
+      <p class="disclaimer">
+        Fan-made and unofficial. Results are entered manually in <code>data.js</code>.
+        Always verify against an official source before beginning any ceremonial rendition of Flower of Scotland.
+      </p>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
