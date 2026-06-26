@@ -1,4 +1,3 @@
-```javascript
 /*
   Updated: Friday 26 June 2026, 09:20 BST
 
@@ -84,4 +83,3 @@ window.TRACKER_DATA = {
     }
   ]
 };
-```
