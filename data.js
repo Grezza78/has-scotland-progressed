@@ -1,12 +1,13 @@
+```javascript
 /*
-  EDIT THIS FILE AS RESULTS ARRIVE.
+  Updated: Friday 26 June 2026, 09:20 BST
 
   status:
     "waiting"    = still mathematically possible
     "qualified"  = YAY!
     "eliminated" = AW.
 
-  For each group:
+  Group state:
     "pending" = not settled
     "helpful" = that group's third-place finisher is below Scotland
     "harmful" = that group's third-place finisher is above Scotland
@@ -14,63 +15,73 @@
 
 window.TRACKER_DATA = {
   status: "waiting",
-  updatedAt: "25 June 2026, 14:15 BST",
+  updatedAt: "26 June 2026, 09:20 BST",
   helpfulNeeded: 4,
 
   groups: [
     {
+      group: "D",
+      state: "harmful",
+      title: "Paraguay 0–0 Australia",
+      requirement:
+        "No favour here. Paraguay finished third with four points and moved above Scotland."
+    },
+    {
       group: "E",
-      state: "pending",
-      title: "Ecuador v Germany / Curaçao v Ivory Coast",
-      requirement: "Scotland want both Ecuador and Curaçao to draw or lose. A win for either puts that side above Scotland."
+      state: "harmful",
+      title: "Ecuador 2–1 Germany",
+      requirement:
+        "A damaging result. Ecuador finished third with four points and qualified ahead of Scotland."
     },
     {
       group: "F",
-      state: "pending",
-      title: "Japan v Sweden",
-      requirement: "Sweden need to lose by at least four goals to drop below Scotland."
-    },
-    {
-      group: "D",
-      state: "pending",
-      title: "Paraguay v Australia",
-      requirement: "A Paraguay defeat by 2+ goals, or an Australia defeat by 4+ goals, is helpful. A draw is not."
+      state: "harmful",
+      title: "Japan 1–1 Sweden",
+      requirement:
+        "Sweden finished third with four points and qualified ahead of Scotland."
     },
     {
       group: "I",
       state: "pending",
       title: "Senegal v Iraq",
-      requirement: "A draw is ideal. A low-scoring Iraq win may also leave the third-placed side below Scotland."
+      requirement:
+        "A draw is ideal. An Iraq win by one or two goals should also leave the third-placed team below Scotland. A Senegal win, or a large Iraq win, is bad news."
     },
     {
       group: "H",
       state: "pending",
-      title: "Uruguay v Spain / Cape Verde v Saudi Arabia",
-      requirement: "Best case: Cape Verde win and Uruguay lose, leaving third place on two points."
+      title: "Uruguay v Spain",
+      requirement:
+        "Scotland need Uruguay to lose. That would leave the third-placed side in Group H on no more than two points."
     },
     {
       group: "G",
       state: "pending",
-      title: "New Zealand v Belgium / Egypt v Iran",
-      requirement: "Best case: Belgium and Egypt win, leaving Iran third on two points."
+      title: "Egypt v Iran",
+      requirement:
+        "Scotland need Egypt to beat Iran. That guarantees the third-placed team in Group G finishes on no more than two points."
     },
     {
       group: "L",
       state: "pending",
       title: "Croatia v Ghana",
-      requirement: "Scotland need Ghana to beat Croatia by at least three goals."
+      requirement:
+        "Croatia must lose by at least three goals. A two-goal defeat would still leave Croatia ahead of Scotland on goals scored."
     },
     {
       group: "K",
       state: "pending",
       title: "DR Congo v Uzbekistan",
-      requirement: "A draw helps; a low-scoring Uzbekistan win may also be enough."
+      requirement:
+        "A draw helps. An Uzbekistan win by no more than three goals should also leave the third-placed team below Scotland. A DR Congo win is bad news."
     },
     {
       group: "J",
       state: "pending",
       title: "Algeria v Austria",
-      requirement: "Scotland want Algeria to lose by at least two goals. A draw is bad news."
+      requirement:
+        "Algeria must lose by at least two goals. A one-goal defeat would leave them level on goal difference but ahead of Scotland on goals scored."
     }
   ]
 };
+```
