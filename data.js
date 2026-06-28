@@ -1,5 +1,7 @@
 /*
-  Updated: Saturday 27 June 2026, 09:55 BST
+  Final update: Sunday 28 June 2026
+
+  Scotland have been eliminated from the 2026 World Cup.
 
   status:
     "waiting"    = still mathematically possible
@@ -13,8 +15,8 @@
 */
 
 window.TRACKER_DATA = {
-  status: "waiting",
-  updatedAt: "27 June 2026, 09:55 BST",
+  status: "eliminated",
+  updatedAt: "28 June 2026 — final",
   helpfulNeeded: 4,
 
   groups: [
@@ -42,44 +44,44 @@ window.TRACKER_DATA = {
     {
       group: "G",
       state: "harmful",
-      title: "Egypt 1–1 Iran",
+      title: "Egypt 0–0 Iran",
       requirement:
-        "Iran finished third with three points and goal difference 0, comfortably above Scotland."
+        "Iran finished third with three points and a better goal difference than Scotland."
     },
     {
       group: "H",
       state: "helpful",
       title: "Uruguay 0–1 Spain",
       requirement:
-        "A favour at last. Uruguay finished third with two points and ranked below Scotland."
+        "Uruguay finished third with two points and ranked below Scotland. One favour was received."
     },
     {
       group: "I",
       state: "harmful",
       title: "Senegal 5–0 Iraq",
       requirement:
-        "Senegal finished third with three points and a much better goal difference than Scotland."
-    },
-    {
-      group: "L",
-      state: "pending",
-      title: "Croatia v Ghana",
-      requirement:
-        "Croatia must lose by at least three goals. Any other result leaves Group L's third-placed side above Scotland."
-    },
-    {
-      group: "K",
-      state: "pending",
-      title: "DR Congo v Uzbekistan",
-      requirement:
-        "A draw is helpful. An Uzbekistan win by one, two or three goals is also helpful. A DR Congo win, or an Uzbekistan win by four or more, is bad news."
+        "Senegal finished third with three points and a far better goal difference than Scotland."
     },
     {
       group: "J",
-      state: "pending",
-      title: "Algeria v Austria",
+      state: "harmful",
+      title: "Algeria 3–3 Austria",
       requirement:
-        "Austria must beat Algeria by at least two goals, or Algeria must beat Austria by at least four. Anything else leaves the third-placed team above Scotland."
+        "Algeria finished third with four points. A stoppage-time equaliser sent both teams through."
+    },
+    {
+      group: "K",
+      state: "harmful",
+      title: "DR Congo 3–1 Uzbekistan",
+      requirement:
+        "DR Congo came from behind to finish third with four points and progress."
+    },
+    {
+      group: "L",
+      state: "harmful",
+      title: "Croatia 2–1 Ghana",
+      requirement:
+        "Ghana finished third but still ranked above Scotland. This result formally ended Scotland's hopes."
     }
   ]
 };
